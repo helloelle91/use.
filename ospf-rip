@@ -1,0 +1,28 @@
+RIP =
+3 network 
+2pc/1 switch/1 router  
+
+between switch = (192.168.10.0)(192.168.20.0)(192.168.30.0)
+between routers = (10.0.0.0)(20.0.0.0)(30.0.0.0)
+
+Configure PC-> Gateway (eg. 192.168.25.1) and IPV4 addresses (eg. 192.168.12.1)
+Connect routers as well by using the same IP for a particular wire (eg. 10.0.0.1)
+
+in each router > config > RIP and add  (192.168.10.0)(192.168.20.0)(192.168.30.0)
+                                       (10.0.0.0)(20.0.0.0)(30.0.0.0)
+
+R1 = f0/0 - 192.168.10.1
+     s2/0 - 20.0.0.1
+     s3/0 - 10.0.0.1
+
+R2 = f0/0 - 192.168.20.1
+     s2/0 - 20.0.0.2
+     s3/0 - 30.0.0.1
+
+R3 = f0/0 - 192.168.30.1
+     s2/0 - 10.0.0.2
+     s3/0 - 30.0.0.2
+
+
+OSPF = remove RIP -> CLI - 
+exit 
