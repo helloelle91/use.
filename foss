@@ -1,0 +1,39 @@
+Foss cloud 
+
+Network-192.168.10.7-share-mayacs-tycloud
+
+Mozerella - ip add -192.168.10.3
+
+Login - admin /admin 
+
+VM - click profiles - 
+
+To create and upload iso file 
+Open WinSCP app 
+
+Username - root | admin 
+
+Upload= 
+iso-choosable>root>var>virtulization >iso choosable 
+
+Drag drop from cycloud  to virtualfoss 
+
+Create profile =linux -default -686(multi) 
+[isofile -click your uploaded 
+Name /describtion it (Linux1 /os) 
+Memory - 3.5gb 
+Volumes-31gb ]
+Create 
+
+
+Create Vm 
+Vm templates -create -your profile -node (already there ) -number of display (1) - create 
+
+Start ➡️ vm 
+
+Action - click square -pops up - choose application-remote-viewer (if not there then needs to be installed ) 
+
+Then. Install Ubuntu 
+
+Once done 
+Stop vm X
