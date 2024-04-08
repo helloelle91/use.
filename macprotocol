@@ -1,0 +1,7 @@
+Change Physical: 2pc/2laptop/1 wireless r
+Laptop: (WMP300)
+Pc: (WPC300N)
+
+
+Router->GUI->Wireless->Wireless MAC Filter -> Enabled->Prevent(default)/Permit->
+[PC13->config->Wireless0->MAC Address (00:00:00:00:00:00)]->Save settings.
