@@ -25,4 +25,8 @@ R3 = f0/0 - 192.168.30.1
 
 
 OSPF = remove RIP -> CLI - 
-exit 
+exit
+Router ospf 1
+network 192.168.10.0  0.0.0.255 area 0
+network 20.0.0.0  0.255.255.255 area 0
+
