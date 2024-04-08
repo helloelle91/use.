@@ -1,0 +1,53 @@
+Go browser and use ip - 192.168.10.3
+Admin/admin
+
+Virtual machine
+->upload iso file
+1)WinScp software username-root pass-admin
+Connect our system left
+Right server 
+-≥ find iso file location 
+Root virtualisation isp choosable drag n drop
+
+Read write owner / group read / others read
+
+->create a profile
+Linux ( depends on iso file)
+Default -i686- multi
+Name - linux1
+Memory 3.13gb
+Volume 31gb
+Create
+
+-> create a vm template 
+Choose ur profile
+Vmpoool already there, default. 
+No of display 1
+Create
+And can be visible
+
+Start vm/edit/delete/ toggle bootdevice and hd
+Cd = Installing os which u specified 
+After installation= hardisk direct interface
+
+Popup
+Spice protocol -> remote.viewer -> open
+Continur and install
+Installation done -> destroy and stop
+Change icon
+And view
+
+
+
+Own clpud
+Only client side
+Ip
+Administrator -> Administrator / admin@123
+
+Users
+Logout
+
+Application -> user pass -> interface 
+Upload content and share
+
+Storage as a service
