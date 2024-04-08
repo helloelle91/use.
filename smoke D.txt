@@ -1,0 +1,23 @@
+req-server access point smoke detector fire sprinkler lawn splinler 3old car 
+
+AP-PT= Port 0 [auto] Port 1 [SSID(SIES)]
+Smoke Detector = Advanced Config->IO config->Network Adapter (PT-IOT-NM-1W) [check]
+                 config->wireless->static->IPV4(1.0.0.2)  SSID(SIES)
+
+Server PT = Config->IP config->IPV4 (1.0.0.1)
+        Services->IOT->ON   Desktop->Web Browser->1.0.0.1 Signup->username:Password:
+       URL->Conditions->Add
+
+Condition === name - ls on - Detector level > 0.5      set LSprinkler to T
+                     ls off - Detector level < 0.5      set LSprinkler to F
+                     Fs on - Detector level > 0.5      set FSprinkler to T
+                     Fs off - Detector level < 0.5      set FSprinkler to F
+
+
+Lawn Sprinkler =config->wireless->static->IPV4(1.0.0.3) / SSID(SIES)
+
+Smoke Detector->config->settings->IOT server -> Remote Server -> Server address:1.0.0.1 (kimaya|123)->connect [change name(Detector)]
+
+Same for  F & L sprinkler 
+
+Car[start]->Alt+ left click

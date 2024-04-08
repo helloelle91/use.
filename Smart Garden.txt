@@ -1,0 +1,16 @@
+req =  2 Water Level Monitor / LSp : Home
+      1 Home gateway: Network Devices-> Access Points
+      1 Smart Phone: End Devices
+
+Smart Phone->config->wireless->Authentication(WPA2-PSK[12345678])
+Same for every element->config->wireless->Authentication(WPA2-PSK[12345678])
+Home Gateway & Smart Phone & Water Monitor & Sprinklers->SSID(SIES1)
+SmartPhone->Web browser->192.168.25.1->username: admin | password: admin
+
+All devices sprinkler and Monitors ->config ->settings->IOT server->(Home Gateway)
+
+
+Condition = LS1-On  WL1 <= 5.0 cm     LS1 to T
+            LS1-OFF WL1 >= 5.0 cm     LS1 to F
+            LS2-On  WL1 <= 5.0 cm     LS1 to T
+            LS2-OFF WL1 >= 5.0 cm     LS1 to F

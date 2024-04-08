@@ -1,0 +1,14 @@
+Light, Fan, Motion Sensor: Home
+Gateway and Smartphone
+
+Smartphone SSID->HomeGateway
+ 
+Smartphone->Desktop->Web Browser(192.168.25.1)->login(admin | admin)
+
+Every device->IOT server->HomeGateway
+
+Condition = md on is false         set fan to off  light to off
+            md on is true        set fan to high  light to on
+
+
+Alt+ Mouse Hover-> Sense motion

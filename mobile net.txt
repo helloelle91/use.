@@ -1,0 +1,12 @@
+Layout - Wireless router -> HUB -> Router (1841)->Server
+         Wireless router -> Smartphone -> Cell tower -> Central Office -> HUB
+
+Router= f0/0 -20.0.0.1
+        f0/1- 21.0.0.1
+
+server = f0 -21.0.0.2
+
+wireless = internet -> ipadd -20.0.0.2
+           default gateway -20.0.0.1
+
+
